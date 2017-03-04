@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- pressed state / clicked state -->
+    <item
+        android:drawable="@drawable/playeronepress"
+        android:state_enabled="true"
+        android:state_pressed="true"
+        />
+    <!-- Not selected state -->
+    <item
+        android:drawable="@drawable/playeronedisable"
+        android:state_enabled="true"
+        android:state_activated="false"
+        />
+    <!-- Selected state -->
+    <item
+        android:drawable="@drawable/playerone"
+        android:state_enabled="true"
+        android:state_activated="true"
+        />
+</selector>

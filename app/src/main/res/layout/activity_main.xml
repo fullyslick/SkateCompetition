@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundmaster"
+    android:orientation="vertical"
+
+    tools:context="com.example.android.skatecompetition.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
+        android:background="#B35f5f5f"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/player_one_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgselector"
+            android:onClick="switchToPlayerOne"
+            android:scaleType="fitCenter"
+            android:src="@drawable/playerone_selector" />
+
+        <TextView
+            android:id="@+id/player_one_score"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:shadowColor="#000"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="5"
+            android:text="0"
+            android:textColor="#ffffff"
+            android:textSize="36sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#ffffff"></View>
+
+        <TextView
+            android:id="@+id/player_two_score"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:shadowColor="#000"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="5"
+            android:text="0"
+            android:textColor="#ffffff"
+            android:textSize="36sp" />
+
+        <ImageButton
+            android:id="@+id/player_two_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/imgselector"
+            android:onClick="switchToPlayerTwo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/playertwo_selector" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/imgselector"
+            android:onClick="kickFlip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/kickflip_selector" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/imgselector"
+            android:onClick="halfSpin"
+            android:scaleType="fitCenter"
+            android:src="@drawable/halfspin_selector" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/imgselector"
+            android:onClick="varialFlip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/varial_selector" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/imgselector"
+            android:onClick="shoveIt"
+            android:scaleType="fitCenter"
+            android:src="@drawable/shoveit_selector" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/imgselector"
+            android:onClick="boardSlide"
+            android:scaleType="fitCenter"
+            android:src="@drawable/boardslide_selector" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/imgselector"
+            android:onClick="fiftyFifty"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fiftyfifty_selector" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/imgselector"
+            android:onClick="noseSlide"
+            android:scaleType="fitCenter"
+            android:src="@drawable/noseslide_selector" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/imgselector"
+            android:onClick="fiveAll"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fiveoull_selector" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="0.8"
+        android:shadowColor="#000"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="5"
+        android:background="@drawable/reset_selector"
+        android:onClick="resetGame"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textSize="18sp"
+        android:text="Reset Game"
+        android:textColor="#fff"
+        android:id="@+id/reset_button"/>
+</LinearLayout>
